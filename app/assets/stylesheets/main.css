@@ -1,0 +1,34 @@
+div#beats {
+  background-color: rgba(168, 224, 15, 0.50);
+  color: #FFF;
+}
+
+div.top_10 {
+  background-color: rgba(168, 224, 15, 0.50);
+  color: #FFF;
+}
+
+div.top_title {
+  background-color: rgba(168, 224, 15, 0.50);
+  color: #FFF;
+}
+
+div.list {
+  background-color: rgba(168, 224, 15, 0.50);
+  color: #FFF;
+}
+
+div.title {
+  background-color: rgba(168, 224, 15, 0.50); 
+  color: #FFF;
+}
+
+div.artist {
+  background-color: rgba(168, 224, 15, 0.50);
+  color: #FFF; 
+}
+
+div.record_label {
+  background-color: rgba(168, 224, 15, 0.50); 
+  color: #FFF;
+}

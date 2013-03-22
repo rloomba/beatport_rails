@@ -10,11 +10,10 @@ gem 'beatport'
 gem 'rspec'
 gem 'thin'
 gem 'quiet_assets'
-gem "less-rails-bootstrap"
+# gem "less-rails-bootstrap"
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
-
 
 # Gems used only for assets and not required
 # in production environments by default.

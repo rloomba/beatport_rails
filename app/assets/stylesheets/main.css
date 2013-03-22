@@ -32,3 +32,16 @@ div.record_label {
   background-color: rgba(168, 224, 15, 0.50); 
   color: #FFF;
 }
+
+h1.header {
+  text-align: center;
+}
+
+body, h1, h2, h3, p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1em;
+}
+
+hr {
+  color: #F0F0F0;
+}

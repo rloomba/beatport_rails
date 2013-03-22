@@ -1,34 +1,10 @@
-<div class="row-fluid">
-  <div class="span3"></div>
-  <div class="span6" id="beats">
-  <% @tops.each do |top| %>
-      <div class="row-fluid">
-      <div class="top_ten" id="<%= top.genre %>">
-        <div class="top_title">
-          <h1><%= get_genre_name(top.genre) %> Top Tracks</h1>
-        </div>
-        <div class="list">
-          <% find_top_tracks(top).each_with_index do |track, i| %>
-            <div class="track row-fluid" id="track_num_<%= i %>">
-              <div class="title span12">
-                <h2><%=track.title%></h2>
-              </div>
-              <div class="row-fluid">
-                <div class="artist span9">
-                  <h3>
-                    <%= track.artists.map{ |a| a.name.strip.chomp }.join(", ") %>
-                  </h3>
-                </div>
-                <div class="record_label span3">
-                  <h4><%= track.label.name %></h4>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div> 
-  <% end %>
+<h1 class="title">BeatportTopTens</h1>
+  <div class="row-fluid">
+    <div class="span12">
+  <!-- <div class="span3"></div> -->
+  <!-- <div class="span6" id="beats"> -->
+    <%= render 'main' %>
+  <!-- </div> -->
+  <!-- <div class="span3"></div> -->
   </div>
-  <div class="span3"></div>
 </div>

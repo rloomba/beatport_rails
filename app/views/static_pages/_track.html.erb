@@ -1,0 +1,17 @@
+<% find_top_tracks(top).each_with_index do |track, i| %>
+  <div class="track row-fluid" id="track_num_<%= i %>">
+    <div class="title span12">
+      <h2><%=track.title%></h2>
+    </div>
+    <div class="row-fluid">
+      <div class="artist span9">
+        <h3>
+          <%= track.artists.map{ |a| a.name.strip.chomp }.join(", ") %>
+        </h3>
+      </div>
+      <div class="record_label span3">
+        <h4><%= track.label.name %></h4>
+      </div>
+    </div>
+  </div>
+<% end %>

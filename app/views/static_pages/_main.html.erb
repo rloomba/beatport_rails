@@ -1,0 +1,18 @@
+<% @tops.each_with_index do |top, i| %>
+  <% if i%3 == 0 %>
+    <div class="row-fluid">
+  <% end %>
+  <div class="span4">
+    <div class="top_ten" id="<%= top.genre %>">
+      <div class="top_title">
+        <h1><%= get_genre_name(top.genre) %> Top Tracks</h1>
+      </div>
+      <div class="list">
+        <%= render 'track', top: top %>
+      </div>
+    </div>
+  </div>
+  <% if i%3 == 2 %>
+    </div>
+  <% end %>
+<% end %>
